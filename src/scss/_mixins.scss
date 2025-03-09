@@ -1,0 +1,11 @@
+@mixin viewport-md {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin text-gradient {
+  background-image: var(--gradient-redtext);
+  background-clip: text;
+  color: transparent;
+}

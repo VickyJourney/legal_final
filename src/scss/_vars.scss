@@ -1,0 +1,35 @@
+:root {
+  --main-color: #323264;
+  --second-color: #ffffff;
+  --third-color: #46466e;
+  --mute-color: #686887;
+  --main-text-color: #000;
+  --second-text-color: #b3b3ba;
+  --accent-color: #f0145a;
+  --active-color: #24a3ff;
+  --active-hover-color: #0085ff;
+  --active-active-color: #006ccf;
+  --bg-color: #f5f5fa;
+  --separator-color: #e6e6f0;
+  --gradient-regular: linear-gradient(
+    rgba(50, 50, 100, 1),
+    rgba(50, 50, 100, 1),
+    rgba(165, 75, 95, 1)
+  );
+  --gradient-soft: linear-gradient(
+    rgba(50, 50, 100, 1),
+    rgba(50, 50, 100, 1),
+    rgba(122, 66, 94, 1)
+  );
+  --gradient-red: linear-gradient(rgba(240, 20, 90, 1), rgba(105, 50, 100, 1));
+  --gradient-supersoft: linear-gradient(
+    rgba(50, 50, 100, 1),
+    rgba(50, 50, 100, 1),
+    rgba(100, 62, 114, 1)
+  );
+  --gradient-redtext: linear-gradient(
+    to right,
+    rgba(240, 20, 90, 1),
+    rgba(239, 128, 128, 1)
+  );
+}
