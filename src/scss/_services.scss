@@ -8,6 +8,15 @@
       }
     }
   }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container {
+    flex-grow: 1;
+  }
   .header__logo {
     display: flex;
     gap: 4px;
@@ -25,17 +34,52 @@
   }
   .header-current-page {
     font-size: 20px;
-    margin-top: -6px;
+    margin-top: -7px;
     @media (min-width: 768px) {
       font-size: 36px;
     }
   }
+  .services__list {
+    gap: 28px;
+    @media (min-width: 768px) {
+      gap: 57px;
+    }
+  }
+  .services___title {
+    margin-bottom: 17px;
+  }
+
+  .bg-box-top {
+    margin-bottom: 78px;
+  }
   .footer {
     border-top: none;
+    padding-top: 30px;
+    &__list {
+      padding-top: 1px;
+    }
   }
 }
 
 .entry_page {
+  .main-container {
+    background-color: var(--bg-color);
+  }
+  .header__topline {
+    @media (min-width: 1024px) {
+      padding: 50px 60px 16px;
+    }
+  }
+
+  .header-current-page {
+    margin-top: -4px;
+    @media (min-width: 768px) {
+      margin-top: -7px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: -9px;
+    }
+  }
   .services {
     display: flex;
     flex-direction: column;
@@ -48,6 +92,10 @@
   .services___title {
     font-size: 30px;
     margin-bottom: 30px;
+    @media (min-width: 768px) {
+      font-size: 38px;
+      margin-bottom: 27px;
+    }
   }
 
   .services___content {
@@ -58,15 +106,20 @@
     border-bottom: solid 4px rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
   }
-  .services___content > p {
+  .services___content p {
     font-size: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     text-align: center;
+    line-height: 1.56;
+    @media (min-width: 768px) {
+      margin-bottom: 23px;
+    }
   }
 
   .button {
+    margin-bottom: 27px;
     @media (min-width: 768px) {
-      margin-bottom: 60px;
+      margin-bottom: 57px;
     }
   }
 
@@ -77,9 +130,10 @@
     &-list {
       font-size: 18px;
       margin-bottom: 60px;
+      line-height: 1.44;
       @media (min-width: 768px) {
         column-count: 2;
-        column-gap: 30px;
+        column-gap: 60px;
       }
     }
     &-item {
@@ -99,11 +153,26 @@
     }
   }
 
-  .top-container {
-    margin-bottom: 80px;
+  .publications__title {
+    margin-bottom: 32px;
   }
 
   .bg-box-bottom {
     border-radius: 12px 12px 0 0;
+  }
+  .footer {
+    @media (min-width: 768px) {
+      padding-top: 35px;
+      gap: 2px;
+    }
+    @media (min-width: 1024px) {
+      padding-top: 33px;
+      gap: 14px;
+    }
+    &__list {
+      @media (min-width: 768px) {
+        margin-bottom: 25px;
+      }
+    }
   }
 }

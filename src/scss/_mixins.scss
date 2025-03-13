@@ -9,3 +9,9 @@
   background-clip: text;
   color: transparent;
 }
+
+@mixin tabs-gradient {
+  background-image: var(--gradient-tabs);
+  background-clip: text;
+  color: transparent;
+}

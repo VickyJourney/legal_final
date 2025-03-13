@@ -1,11 +1,10 @@
 .tabs {
-  padding-top: 30px;
   margin-bottom: 30px;
   @media (min-width: 768px) {
-    padding-top: 60px;
     margin-bottom: 60px;
     @media (min-width: 1024px) {
       display: flex;
+      align-items: center;
     }
   }
   &-list {
@@ -22,8 +21,10 @@
       width: calc(100% - 62px);
       align-items: flex-end;
       margin-bottom: 0;
-      margin-right: 60px;
+      margin-right: 0;
+      padding-right: 60px;
       overflow: hidden;
+      border-right: 4px solid rgba(255, 255, 255, 0.3);
     }
   }
   &-item {
@@ -41,7 +42,7 @@
     }
 
     &.active {
-      @include text-gradient;
+      @include tabs-gradient;
     }
     &:hover {
       color: var(--accent-color);
@@ -71,9 +72,16 @@
     padding-top: 0;
     padding-left: 60px;
     border-top: none;
-    border-left: 4px solid rgba(255, 255, 255, 0.3);
   }
-  & h2 {
+  h2 {
     margin-bottom: 30px;
+    font-size: 20px;
+    @media (min-width: 768px){
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 19px;
+    line-height: 1.6;
   }
 }

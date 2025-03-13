@@ -32,4 +32,8 @@
     rgba(240, 20, 90, 1),
     rgba(239, 128, 128, 1)
   );
+
+  --gradient-tabs: linear-gradient(
+    to right, rgba(239, 128, 128, 1),  rgba(240, 20, 90, 1)
+  );
 }

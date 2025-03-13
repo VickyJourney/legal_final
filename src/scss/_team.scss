@@ -1,0 +1,70 @@
+.team__img {
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  @media (min-width: 1024px) {
+    width: 400px;
+    border-radius: 12px 0 0 12px;
+    flex-shrink: 0;
+  }
+  @media (min-width: 1440px) {
+    min-height: 344px;
+  }
+  @media (min-width: 1920px) {
+    min-height: 298px;
+  }
+
+  img {
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: 1024px) {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    @media (min-width: 1440px) {
+      min-height: 344px;
+    }
+    @media (min-width: 1920px) {
+      min-height: 298px;
+    }
+  }
+}
+
+.team {
+  padding-bottom: 60px;
+  margin-bottom: 42px;
+  &__info {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 0 0 12px 12px;
+    &-title {
+      margin-bottom: 44px;
+    }
+    &-member {
+      color: var(--second-text-color);
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: block;
+    }
+    &-position {
+      color: var(--second-text-color);
+      font-size: 14px;
+    }
+  }
+}
+
+.team .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  background-color: var(--active-color);
+}
+
+.swiper-slide {
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
