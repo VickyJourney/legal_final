@@ -379,9 +379,9 @@ h4 {
   align-items: center;
   position: relative;
   background-image: url(/src/img/icons/symbol-h.svg);
-  background-position: 50% 50%;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 
   @media (max-width: 767px) {
     margin: 0 -30px;

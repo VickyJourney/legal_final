@@ -1,5 +1,13 @@
 # Hlegal frontend project
 
+## Available pages
+
+```bash
+1. Homepage
+2. Services
+3. Service-entry "IT and e-commerce"
+```
+
 ## How to run
 
 ```bash
@@ -9,7 +17,6 @@ npm install
 # 2. Run project locally
 npm run dev
 ```
-
 
 ## Scripts
 

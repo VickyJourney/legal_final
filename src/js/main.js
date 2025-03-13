@@ -70,5 +70,6 @@ const swiper = new Swiper('.swiper', {
   modules: [Pagination],
   pagination: {
     el: '.swiper-pagination',
+    clickable: true
   },
 });
