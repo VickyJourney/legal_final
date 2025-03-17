@@ -39,7 +39,9 @@
   &__info {
     background-color: var(--bg-color);
     padding: 30px;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
+    width: 100%;
+    flex-grow: 1;
     &-title {
       margin-bottom: 44px;
     }
@@ -63,8 +65,9 @@
   background-color: var(--active-color);
 }
 
-.swiper-slide {
+.swiper-wrapper .swiper-slide {
   @media (min-width: 1024px) {
     display: flex;
+    width: 100vw;
   }
 }

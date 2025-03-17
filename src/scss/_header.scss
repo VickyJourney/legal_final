@@ -1,0 +1,233 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  @media (max-width: 767px) {
+    left: 30px;
+    right: 30px;
+  }
+
+  &__topline {
+    background: rgba(245, 245, 250, 0.2);
+    margin: 0 -30px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px) {
+      justify-content: flex-start;
+      background: none;
+      margin: 0;
+      padding: 50px 60px 30px;
+    }
+    @media (min-width: 1024px) {
+      justify-content: flex-end;
+      padding: 50px 60px 15px;
+    }
+    @media (min-width: 1920px) {
+      padding: 50px 160px 15px;
+    }
+
+    > li + li {
+      @media (min-width: 768px) {
+        position: relative;
+        padding-left: 18px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 7px;
+          top: 10px;
+          width: 6px;
+          height: 6px;
+          background-color: var(--separator-color);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__lang-list {
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__lang-item {
+    margin: 0.5px;
+  }
+
+  &__lang-link {
+    border-radius: 8px;
+    padding: 5px 7px;
+
+    &.active {
+      background-color: var(--accent-color);
+    }
+    &:hover {
+      background-color: var(--bg-color);
+      color: var(--second-text-color);
+    }
+  }
+
+  &__adress {
+    color: var(--second-text-color);
+  }
+
+  &__phone {
+    font-weight: 700;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    & > svg:hover {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__bottomline {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -30px;
+    padding: 15px;
+    @media (min-width: 768px) {
+      margin: 0;
+      padding: 0 60px 5px;
+      flex-direction: column;
+    }
+    @media (min-width: 1920px) {
+      padding: 0 160px 5px;
+    }
+  }
+
+  &__burger {
+    stroke: var(--second-color);
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+    width: 70px;
+    height: 32px;
+    @media (min-width: 768px) {
+      width: 130px;
+      height: 60px;
+    }
+    @media (min-width: 1024px) {
+      position: absolute;
+      margin: 0;
+      top: 60%;
+      transform: translateY(-50%);
+    }
+
+    &:first-child svg {
+      @media (min-width: 768px) {
+        width: 130px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+.header__menu {
+  @media (max-width: 767px) {
+    position: fixed;
+    transform: translateY(120%);
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    background-color: var(--second-color);
+    border-radius: 12px 12px 0 0;
+    padding: 64px 12px 12px;
+    text-align: center;
+    transition: transform 0.2 linear;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &.active ~ .header__burger > svg {
+    background-color: var(--separator-color);
+    border-radius: 8px;
+    stroke: var(--main-color);
+  }
+
+  &-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-list {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: flex-end;
+    }
+  }
+
+  &-item {
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+    &.active a {
+      color: var(--accent-color);
+      @media (min-width: 768px) {
+        padding-bottom: 3px;
+        border-bottom: 2px solid var(--accent-color);
+      }
+    }
+
+    &:hover a {
+      @media (min-width: 768px) {
+        padding-bottom: 3px;
+        color: var(--second-color);
+        border-bottom: 2px solid var(--second-color);
+      }
+    }
+
+    &:not(:last-child) {
+      @media (min-width: 768px) {
+        margin: 0 16px 0 0;
+      }
+    }
+  }
+  &-link {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--second-color);
+    @media (max-width: 767px) {
+      display: block;
+      background-color: var(--bg-color);
+      border-radius: 12px;
+      padding: 7px 0;
+      font-size: 24px;
+      color: var(--active-color);
+    }
+    &:active {
+      @media (max-width: 767px) {
+        background-color: var(--separator-color);
+      }
+    }
+  }
+}
